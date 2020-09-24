@@ -353,6 +353,9 @@ const types = sql`
 
 #### JSON `sql.json(object)`
 
+PostgreSQL has a native json type which support any serializable js object. 
+This method automatically infers the item type and serializes objects into PostgreSQL json type.
+
 ```js
 
 const body = { hello: 'postgres' }
